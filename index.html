@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Advanced Task Manager</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+    <div class="container">
+        <h1>📝 Task Manager</h1>
+
+        <div class="task-input">
+            <input type="text" id="taskInput" placeholder="Enter new task...">
+            <select id="priority">
+                <option value="Low">Low</option>
+                <option value="Medium">Medium</option>
+                <option value="High">High</option>
+            </select>
+            <button onclick="addTask()">Add Task</button>
+        </div>
+
+        <div class="filters">
+            <button onclick="filterTasks('all')">All</button>
+            <button onclick="filterTasks('completed')">Completed</button>
+            <button onclick="filterTasks('pending')">Pending</button>
+        </div>
+
+        <ul id="taskList"></ul>
+
+        <div class="clear">
+            <button onclick="clearAll()">Clear All</button>
+        </div>
+    </div>
+
+<script src="js/script.js"></script>
+</body>
+</html>
