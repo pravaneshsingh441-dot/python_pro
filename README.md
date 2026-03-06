@@ -38,4 +38,4 @@ task-manager/
 
 ## 👨‍💻 Author
 
-Aman Singh
+Pravanesh Singh
